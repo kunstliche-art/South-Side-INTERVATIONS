@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>South Side Tatto INTERVATION</title>
+
+    <link rel="icon" type="image/x-icon" href="favicon.ico"/>
+  </header>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+  <style>100px;
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@700&display=swap');
+    body {
+      font-family: 'Montserrat', Arial, sans-serif;
+      margin: 2;
+      background: download jpg (135deg, #181818 0%, #222 60%, #bfa14a 100%);
+      color: #fff;
+      min-height: 100vh;
+    }
+    .navbar {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(10,10,10,0.98);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+      border-bottom: 4px solid #bfa14a;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+    }
+    .navbar-logo IMG-20250722-WA0165.jpg{
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      color: #bfa14a;
+      font-weight: 700;
+      letter-spacing: 2px;
+      display: flex;
+      align-items: center;
+    }
+    .navbar-menu {
+      display: flex;
+      gap: 2rem;
+    }
+    .navbar-menu a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1rem;
+      transition: color 0.2s;
+      position: relative;
+    }
+    .navbar-menu a::after {
+      content: '';
+      display: block;
+      width: 0;
+      height: 2px;
+      background: #bfa14a;
+      transition: width 0.3s;
+      position: absolute;
+      left: 0;
+      bottom: -4px;
+    }
+    .navbar-menu a:hover {
+      color: #bfa14a;
+    }
+    .navbar-menu a:hover::after {
+      width: 100%;
+    }
+    .hero {
+      min-height: 60vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(120deg, #181818 60%, #222 100%);
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.5rem;
+      color: #bfa14a;
+      margin-bottom: 0.5rem;
+      letter-spacing: 1px;
+    }
+    .hero-tagline {
+      font-size: 1.3rem;
+      margin-bottom: 2rem;
+      color: #fff;
+      font-weight: 500;
+    }
+    .btn-gold {
+      background: Get Ink Or Get Out - LED Neon Sign.jpeg(90deg, #bfa14a 60%, #fffbe6 100%);
+      color: #181818;
+      border: none;
+      border-radius: 30px;
+      padding: 0.9rem 2.2rem;
+      font-size: 1.1rem;
+      font-weight: 700;
+      cursor: pointer;
+      box-shadow: 0 2px 12px #bfa14a33;
+      transition: background 0.3s, color 0.3s, transform 0.2s;
+      outline: none;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 1rem;
+    }
+    .btn-gold:hover {
+      background: #fffbe6;
+      color: #bfa14a;
+      transform: translateY(-2px) scale(1.04);
+    }
+    .section {
+      max-width: 1100px;
+      margin: 3rem auto;
+      padding: 2rem 1rem;
+      background: rgba(20,20,20,0.92);
+      border-radius: 18px;
+      box-shadow: 0 4px 24px #0005;
+      position: relative;
+      overflow: hidden;
+    }
+    .section-title {
+      font-family: 'Playfair Display', serif;
+      color: #bfa14a;
+      font-size: 2rem;
+      margin-bottom: 1.2rem;
+      letter-spacing: 1px;
+      text-align: center;
+    }
+    .section-divider {
+      width: 80px;
+      height: 4px;
+      background: linear-gradient(90deg, #bfa14a 60%, #fffbe6 100%);
+      margin: 0.5rem auto 2rem auto;
+      border-radius: 2px;
+    }
+    .tattoos-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.5rem;
+      margin-top: 1.5rem;
+    }
+    .tattoo-card {
+      background: #181818;
+      border: 1.5px solid #bfa14a55;
+      border-radius: 14px;
+      padding: 1.2rem;
+      color: #fff;
+      box-shadow: 0 2px 12px #0003;
+      transition: transform 0.2s, box-shadow 0.2s;
+      position: relative;
+      overflow: hidden;
+      text-align: center;
+    }
+    .tattoo-card img {
+      width: 100%;
+      max-width: 220px;
+      border-radius: 10px;
+      margin-bottom: 0.7rem;
+      border: 2px solid #bfa14a33;
+    }
+    .tattoo-card h3 {
+      color: #bfa14a;
+      font-family: 'Playfair Display', serif;
+      font-size: 1.1rem;
+      margin-bottom: 0.5rem;
+    }
+    .tattoo-card p {
+      font-size: 0.98rem;
+      color: #fffbe6;
+    }
+    .contact-section {
+      text-align: center;
+    }
+    .contact-section .btn-gold {
+      margin: 1rem 0;
+    }
+    .contact-info {
+      color: #fffbe6;
+      font-size: 1.1rem;
+      margin-bottom: 1rem;
+    }
+    .social-icons {
+      margin: 1.5rem 0 0.5rem 0;
+    }
+    .social-icons a {
+      color: #bfa14a;
+      margin: 0 0.7rem;
+      font-size: 2rem;
+      transition: color 0.2s, transform 0.2s;
+      display: inline-block;
+    }
+    .social-icons a:hover {
+      color: #fffbe6;
+      transform: scale(1.15);
+    }
+    .join-section form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      max-width: 400px;
+      margin: 0 auto;
+    }
+    .join-section input, .join-section textarea {
+      padding: 0.7rem;
+      border-radius: 8px;
+      border: 1px solid #bfa14a55;
+      background: #222;
+      color: #fff;
+      font-size: 1rem;
+      resize: none;
+    }
+    .join-section button {
+      background: linear-gradient(90deg, #bfa14a 60%, #fffbe6 100%);
+      color: #181818;
+      border: none;
+      border-radius: 30px;
+      padding: 0.7rem 2rem;
+      font-size: 1.1rem;
+      font-weight: 700;
+      cursor: pointer;
+      box-shadow: 0 2px 12px #bfa14a33;
+      transition: background 0.3s, color 0.3s, transform 0.2s;
+    }
+    .join-section button:hover {
+      background: #fffbe6;
+      color: #bfa14a;
+      transform: translateY(-2px) scale(1.04);
+    }
+    footer {
+      background: #181818;
+      color: #fffbe6;
+      padding: 2rem 1rem 1rem 1rem;
+      text-align: center;
+      border-top: 2px solid #bfa14a33;
+      margin-top: 3rem;
+    }
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin-bottom: 1rem;
+      flex-wrap: wrap;
+    }
+    .footer-links a {
+      color: #bfa14a;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.2s;
+    }
+    .footer-links a:hover {
+      color: #fffbe6;
+    }
+    @media (max-width: 800px) {
+      .navbar { flex-direction: column; gap: 1rem; }
+      .tattoos-grid { grid-template-columns: 1fr; }
+      .section { padding: 1rem 0.5rem; }
+    }
+    @media (max-width: 500px) {
+      .hero-title { font-size: 1.5rem; }
+      .navbar-logo { font-size: 1.2rem; }
+      .section-title { font-size: 1.2rem; }
+    }
+  </style>
+</head>
+<body>
+  <!-- Home Section with Logo and Tagline -->
+  <section id="home" style="background:linear-gradient(120deg,#181818 0%,#bfa14a 60%,#c0392b 100%);box-shadow:0 4px 24px #000a;">
+    <div style="display:flex;flex-direction:column;align-items:center;padding:2.5rem 1rem 1.5rem 1rem;">
+      <img src="IMG-20250722-WA0165.jpg" alt="Southside Logo" style="height:110px;width:auto;margin-bottom:10px;border-radius:18px;box-shadow:0 4px 24px #fffbe6;object-fit:cover;background:#fffbe6;">
+      <div style="font-family:'Playfair Display',serif;font-size:3.2rem;font-weight:900;letter-spacing:3px;color:#fffbe6;text-align:center;text-shadow:0 2px 12px #c0392b,0 0 2px #181818;">South Side INTERVATIONS</div>
+      <div style="font-family:'Montserrat',Arial,sans-serif;font-size:1.4rem;font-style:italic;font-weight:900;color:#000;text-align:center;margin-top:0.2em;letter-spacing:1px;text-shadow:0 2px 8px #fffbe6;">YO next door ink plug</div>
+      <!-- Optionally, you can keep landing buttons here, but the navbar is removed as requested -->
+    </div>
+  </section>
+
+  <!-- Sticky Navbar (without logo/tagline) -->
+  <div class="navbar" style="height:76px;flex-direction:row;align-items:center;background:rgba(10,10,10,0.98);box-shadow:0 4px 10px #000a;border-bottom:4px solid #bfa14a;position:sticky;top:0;z-index:1000;">
+    <nav class="navbar-menu" style="margin:auto;gap:2.5rem;">
+      <a href="#about" style="color:#fffbe6;font-size:1.18rem;">About Us</a>
+      <a href="#tattoos" style="color:#fffbe6;font-size:1.18rem;">Tattoos</a>
+      <a href="#contact" style="color:#fffbe6;font-size:1.18rem;">Contacts</a>
+      <a href="#join" style="color:#fffbe6;font-size:1.18rem;">Be a Part of Us</a>
+    </nav>
+  </div>
+
+  <section class="hero" style="background: url('download.jpeg') center/cover no-repeat; min-height: 70vh;">
+    <div style="background:rgba(0,0,0,0.55);padding:3rem 1rem 2rem 1rem;border-radius:24px;max-width:600px;margin:auto;box-shadow:0 8px 32px #000a;">
+      <div class="hero-title" style="color:#fffbe6;text-shadow:0 2px 12px #bfa14a,0 0 2px #000;">Where Ink Meets Artistry</div>
+      <div class="hero-tagline" style="color:#bfa14a;font-size:1.4rem;">Premium, bold, and transformative tattoo experiences in gold, black, and white.</div>
+      <a href="#contact" class="btn-gold" style="margin-top:2rem;">Get Help Now</a>
+    </div>
+  </section>
+
+  <section id="about" class="section" style="background:linear-gradient(120deg,#bfa14a 0%,#fffbe6 60%,#181818 100%);color:#181818;padding:3.5rem 1.5rem 3.5rem 1.5rem;">
+    <div class="section-title" style="color:#181818;text-shadow:0 2px 8px #fffbe6;">About Us</div>
+    <div class="section-divider" style="background:linear-gradient(90deg,#181818 60%,#bfa14a 100%);"></div>
+    <p style="font-size:1.18rem;font-weight:600;max-width:800px;margin:auto;line-height:1.7;">
+      <b>SouthSide™ Intervention</b> is a bold creative studio based in Mombasa, Kenya — specializing in tattoos, graphic design, airbrush art, and custom visuals that hit different. Born from the streets and built with raw talent, SouthSide is where urban culture meets refined artistry.<br><br>
+      From clean, detailed tattoos to wall logos, portraits, canvas work, and branding material — we bring every idea to life with attitude, skill, and originality. Whether you want your skin inked, your space upgraded, or your brand elevated, we got you.<br><br>
+      We’re not just a studio — we’re a movement of artists pushing the edge of expression. Proudly local. Fearlessly creative. Always real.<br><br>
+      <b>📍 Based in Mombasa</b><br>
+      <b>📲 Connect with us:</b> <br>
+      Instagram: <a href="https://www.instagram.com/south_5ide?utm_source=qr&igsh=MWlwODRyOGJtaG00cA==" style="color:#c0392b;font-weight:700;">@south_5ide</a> | WhatsApp: <a href="https://wa.me/254795225095" style="color:#c0392b;font-weight:700;">+254 795 225 095</a><br>
+      Email: <a href="mailto:info@southsidetattoos.com" style="color:#c0392b;font-weight:700;">info@southsidetattoos.com</a>
+    </p>
+  </section>
+
+  <section id="tattoos" class="section" style="background:linear-gradient(120deg,#bfa14a 0%,#181818 60%,#c0392b 100%);">
+    <div class="section-title" style="color:#fffbe6;text-shadow:0 2px 8px #c0392b;">Our Tattoos</div>
+    <div class="section-divider" style="background:linear-gradient(90deg,#fffbe6 60%,#c0392b 100%);"></div>
+    <div class="tattoos-grid">
+      <div class="tattoo-card">
+        <img src="IMG-20250722-WA0162.jpg" alt="Tattoo 1" />
+        <h3>Black & Gold Lion</h3>
+        <p>Symbolizing strength and royalty, this piece blends gold accents with bold black lines.</p>
+      </div>
+      <div class="tattoo-card">
+        <img src="IMG-20250722-WA0163.jpg" alt="Tattoo 2" />
+        <h3>Minimalist Crown</h3>
+        <p>Clean, sharp, and elegant. A subtle nod to power and leadership.</p>
+      </div>
+      <div class="tattoo-card">
+        <img src="IMG-20250722-WA0164.jpg" alt="Tattoo 3" />
+        <h3>Geometric Sleeve</h3>
+        <p>Modern geometry meets classic blackwork for a bold statement.</p>
+      </div>
+      <div class="tattoo-card">
+        <img src="IMG-20250722-WA0165.jpg" alt="Tattoo 4" />
+        <h3>White Ink Rose</h3>
+        <p>Delicate and unique, this white ink rose stands out on any canvas.</p>
+      </div>
+      <div class="tattoo-card">
+        <img src="IMG-20250722-WA0166.jpg" alt="Tattoo 5" />
+        <h3>Abstract Blackwork</h3>
+        <p>Bold abstract lines and shapes for a modern, artistic look.</p>
+      </div>
+      <div class="tattoo-card">
+        <img src="IMG-20250722-WA0167.jpg" alt="Tattoo 6" />
+        <h3>Gold-Edged Mandala</h3>
+        <p>Intricate mandala with gold highlights for a spiritual touch.</p>
+      </div>
+      <div class="tattoo-card">
+        <img src="IMG-20250722-WA0168.jpg" alt="Tattoo 7" />
+        <h3>Classic Script</h3>
+        <p>Personalized script tattoos in elegant, flowing lines.</p>
+      </div>
+      <div class="tattoo-card">
+        <img src="IMG-20250722-WA0169.jpg" alt="Tattoo 8" />
+        <h3>Tribal Fusion</h3>
+        <p>Traditional tribal patterns reimagined with a modern twist.</p>
+      </div>
+      <div class="tattoo-card">
+        <img src="IMG-20250722-WA0170.jpg" alt="Tattoo 9" />
+        <h3>White Ink Infinity</h3>
+        <p>Subtle and unique, this infinity symbol uses white ink for a soft effect.</p>
+      </div>
+      <div class="tattoo-card">
+        <img src="IMG-20250722-WA0171.jpg" alt="Tattoo 10" />
+        <h3>Gold Crowned Skull</h3>
+        <p>A bold skull design crowned with gold, symbolizing power over adversity.</p>
+      </div>
+      <div class="tattoo-card">
+        <img src="IMG-20250722-WA0172.jpg" alt="Tattoo 11" />
+        <h3>Minimalist Rose</h3>
+        <p>Simple, elegant rose design for timeless beauty.</p>
+      </div>
+      <div class="tattoo-card">
+        <img src="IMG-20250722-WA0173.jpg" alt="Tattoo 12" />
+        <h3>Gold-Outlined Phoenix</h3>
+        <p>A phoenix rising, outlined in gold for a touch of luxury.</p>
+      </div>
+      <div class="tattoo-card">
+        <img src="IMG-20250722-WA0174.jpg" alt="Tattoo 13" />
+        <h3>Black & White Portrait</h3>
+        <p>Realistic portrait work in classic black and white.</p>
+      </div>
+      <div class="tattoo-card">
+        <img src="IMG-20250722-WA0175.jpg" alt="Tattoo 14" />
+        <h3>Script & Symbol</h3>
+        <p>Combining meaningful script with symbolic imagery.</p>
+      </div>
+      <div class="tattoo-card">
+        <img src="IMG-20250722-WA0176.jpg" alt="Tattoo 15" />
+        <h3>Gold-Leaf Lotus</h3>
+        <p>Lotus flower with gold leaf accents for enlightenment and beauty.</p>
+      </div>
+      <div class="tattoo-card">
+        <img src="IMG-20250722-WA0177.jpg" alt="Tattoo 16" />
+        <h3>Modern Minimal</h3>
+        <p>Minimalist lines and shapes for a contemporary look.</p>
+      </div>
+      <div class="tattoo-card">
+        <img src="IMG-20250722-WA0178.jpg" alt="Tattoo 17" />
+        <h3>White Ink Feather</h3>
+        <p>Light and airy feather design in white ink.</p>
+      </div>
+      <div class="tattoo-card">
+        <img src="IMG-20250722-WA0179.jpg" alt="Tattoo 18" />
+        <h3>Gold-Edged Compass</h3>
+        <p>Find your way with this compass design, finished in gold.</p>
+      </div>
+      <div class="tattoo-card">
+        <img src="IMG-20250722-WA0180.jpg" alt="Tattoo 19" />
+        <h3>Classic Anchor</h3>
+        <p>A symbol of stability and hope, rendered in bold black.</p>
+      </div>
+      <div class="tattoo-card">
+        <img src="IMG-20250722-WA0181.jpg" alt="Tattoo 20" />
+        <h3>Signature Custom</h3>
+        <p>Your story, your ink. Custom designs tailored to you.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section contact-section" style="background:url('Get Ink Or Get Out - LED Neon Sign.jpeg') center/cover no-repeat;position:relative;">
+    <div style="background:rgba(0,0,0,0.7);padding:2.5rem 1rem 2rem 1rem;border-radius:18px;max-width:600px;margin:auto;box-shadow:0 8px 32px #000a;">
+      <div class="section-title" style="color:#fffbe6;text-shadow:0 2px 12px #c0392b,0 0 2px #000;">Contact Us</div>
+      <div class="section-divider" style="background:linear-gradient(90deg,#bfa14a 60%,#fffbe6 100%);"></div>
+      <div class="contact-info" style="color:#fffbe6;">
+        <div>WhatsApp: <a href="https://wa.me/254795225095" class="btn-gold" target="_blank" style="background:#c0392b;color:#fffbe6;">Chat on WhatsApp</a></div>
+        <div>Phone: <a href="tel:+254795225095" class="btn-gold" style="background:#bfa14a;color:#181818;">+254 795 225095</a></div>
+        <div>Email: <a href="mailto:info@southsidetattoos.com" class="btn-gold" style="background:#fffbe6;color:#c0392b;">info@southsidetattoos.com</a></div>
+      </div>
+      <div class="social-icons">
+        <a href="https://wa.me/254795225095" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://www.instagram.com/south_5ide?utm_source=qr&igsh=MWlwODRyOGJtaG00cA==" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.facebook.com/sirhc.mwamburi?mibextid=rS40aB7S9Ucbxw6v" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
+        <a href="https://vm.tiktok.com/ZMBg22Fko/" target="_blank" title="TikTok"><i class="fab fa-tiktok"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <section id="join" class="section join-section" style="background:linear-gradient(120deg,#c0392b 0%,#181818 60%,#bfa14a 100%);">
+    <div class="section-title" style="color:#fffbe6;text-shadow:0 2px 8px #bfa14a;">Be a Part of Us</div>
+    <div class="section-divider" style="background:linear-gradient(90deg,#fffbe6 60%,#bfa14a 100%);"></div>
+    <form method="POST" action="/api/join">
+      <input type="text" name="name" placeholder="Full Name" required style="background:#fffbe6;color:#c0392b;" />
+      <input type="email" name="email" placeholder="Email Address" required style="background:#fffbe6;color:#c0392b;" />
+      <textarea name="message" placeholder="Tell us why you'd love to join Southside Tattoo" required style="background:#fffbe6;color:#c0392b;"></textarea>
+      <button type="submit" style="background:#c0392b;color:#fffbe6;">Submit</button>
+    </form>
+  </section>
+
+  <footer>
+    <div class="footer-links">
+      <a href="#about">About Us</a>
+      <a href="#tattoos">Tattoos</a>
+      <a href="#contact">Contacts</a>
+      <a href="#join">Be a Part of Us</a>
+    </div>
+    <div class="social-icons">
+      <a href="https://wa.me/254795225095" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+      <a href="https://www.instagram.com/south_5ide?utm_source=qr&igsh=MWlwODRyOGJtaG00cA==" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.facebook.com/sirhc.mwamburi?mibextid=rS40aB7S9Ucbxw6v" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
+      <a href="https://vm.tiktok.com/ZMBg22Fko/" target="_blank" title="TikTok"><i class="fab fa-tiktok"></i></a>
+    </div>
+    <div style="margin-top:1rem; color:#bfa14a;">&copy; 2025 Southside Tattoo | All Rights Reserved</div>
+  </footer>
+</body>
+</html>
